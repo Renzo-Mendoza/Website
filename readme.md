@@ -1,16 +1,16 @@
-# Add new file in branch
+### Add new file in branch
 `git add .`
-# Check git status
+### Check git status
 `git status`
-# Change git working branch
+### Change git working branch
 `git checkout <branch-name>`
-# Check branch
+### Check branch
 `git branch`
-# Clone branch to another
+### Clone branch to another
 `git branch <new-branch> <existing-branch>`
-# Commit after adding
+### Commit after adding
 `git commit -m "<message>"`
-# Update github
+### Update github
 `git push`
-# Merge branches
+### Merge branches
 `git merge -m "<message>" <branch>`
