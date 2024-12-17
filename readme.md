@@ -12,3 +12,5 @@
 `git commit -m "<message>"`
 # Update github
 `git push`
+# Merge branches
+`git merge -m "<message>" <branch>`
