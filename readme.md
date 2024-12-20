@@ -20,3 +20,5 @@
 `git merge -m "<message>" <branch>`
 ### Download online branch to local one
 `git checkout -b <localbranch-name> origin/<repository-branch>`
+### Update local folder from online repository
+`git pull`
