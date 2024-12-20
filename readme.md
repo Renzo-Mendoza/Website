@@ -4,6 +4,8 @@
 `git add .`
 ### Change git working branch
 `git checkout <branch-name>`
+### Create a new branch in base to the current selected branch
+`git checkout -b <newbranch-name>`
 ### Check local branch
 `git branch`
 ### Check online branch
@@ -17,4 +19,4 @@
 ### Merge branches
 `git merge -m "<message>" <branch>`
 ### Download online branch to local one
-`git checkout -b <local-branch> origin/<repository-branch>`
+`git checkout -b <localbranch-name> origin/<repository-branch>`
