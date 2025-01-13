@@ -22,3 +22,6 @@
 `git checkout -b <localbranch-name> origin/<repository-branch>`
 ### Update local folder from online repository
 `git pull`
+### Stash (only when pull does not work)
+`git stash push --include-untracked`
+`git stash drop`
