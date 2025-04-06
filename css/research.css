@@ -17,9 +17,11 @@
   font-weight: 700;
 }
 
-.experience-grid{
+.research-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 40px;
-  column-gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.harvard-experience-picture{
+  height: 250px;
 }

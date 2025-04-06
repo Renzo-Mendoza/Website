@@ -42,7 +42,7 @@
   line-height: 1.8;
 }
 
-.contact {
+.contact-group {
   /* Container third*/
   height: 60px;
   display: flex;
@@ -66,9 +66,7 @@
   text-align: center;
 }
 
-.email-contact,
-.linkedin-contact,
-.github-contact {
+.contact {
   /* Container fourth */
   background-color: none;
   display: block;
@@ -81,6 +79,11 @@
 .github-icon {
   /* Image */
   height: 40px;
+}
+
+.orcid-icon {
+  /* Image */
+  height: 32px;
 }
 
 /* Photo Section */
@@ -104,7 +107,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .presentation {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
