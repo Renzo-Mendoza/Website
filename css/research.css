@@ -1,10 +1,14 @@
 /* Main Section */
-.research { /* Container first */
+.research-section {
+  /* Container first */
   margin-top: -50px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* Research section */
-.research-title{ /* Container second */
+.research-section-title {
+  /* Container second */
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
@@ -12,16 +16,160 @@
   padding-bottom: 15px;
 }
 
-.research-title-info{ /* Research section */
+.research-section-title-info {
+  /* Paragraph */
   font-size: 25px;
   font-weight: 700;
 }
 
-.research-grid{
+.research-grid {
+  /* Container second */
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.harvard-experience-picture{
-  height: 250px;
+.research-experience {
+  /* Container third */
+  display: flex;
+  grid-template-columns: 0.1fr 0.8fr;
 }
+
+.experience-figure-container {
+  /* Container fourth */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.experience-figure {
+  /* Container fourth */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.harvard-experience-picture {
+  /* Picture */
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.harvard-experience-onclick-picture {
+  /* Picture */
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  max-width: 200px;
+  cursor: pointer;
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.harvard-experience-picture:hover {
+  /* Image */
+  opacity: 0;
+}
+
+.experience-info {
+  /* Container fourth */
+  position: absolute;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.experience-title {
+  /* Paragraph */
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.experience-authors {
+  /* Container fifth */
+  margin-top: 10px;
+  display: flex;
+}
+
+.collaborator-authorship {
+  /* Paragraph */
+  opacity: 0.5;
+}
+
+.experience-description {
+  /* Paragraph */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.lock-icon-picture{
+  height: 16px;
+}
+
+.experience-links {
+  /* Container fifth */
+  margin-top: 10px;
+  display: flex;
+  justify-content: bottom;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.url-container {
+  display: flex;
+  margin-right: 8px;
+  position: relative;
+}
+
+.nourl-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.nourl-paragraph:hover {
+  opacity: 0;
+}
+
+.nourl-onclick-paragraph {
+  position: absolute;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  color: #23388E;
+}
+
+.link-icon-picture,
+.link-icon-onclick-picture {
+  height: 16px;
+}
+
+.pdf-icon-picture,
+.pdf-icon-onclick-picture {
+  /* Picture */
+  height: 15px;
+}
+
+.code-icon-picture,
+.code-icon-onclick-picture {
+  /* Picture */
+  height: 15px;
+}
+
+/*.experience-link-nourl {
+   Paragraph 
+  margin-right: 8px;
+  color: black;
+  text-decoration: none;
+}*/

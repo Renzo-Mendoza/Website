@@ -1,10 +1,11 @@
 /* Main section */
-.presentation {
+.presentation-section {
   /* Container first */
   display: grid;
   margin-top: -50px;
   grid-template-columns: 0.6fr 0.4fr;
   margin-bottom: 50px;
+  max-width: 1000px;
   /*height: 240px;*/
 }
 
@@ -82,23 +83,23 @@
   margin-right: 0px;
 }
 
-.email-icon,
-.linkedin-icon,
-.github-icon {
+.email-icon-picture,
+.linkedin-icon-picture,
+.github-icon-picture {
   /* Image */
   height: 40px;
   transition: opacity 0.2s;
 }
 
-.orcid-icon {
+.orcid-icon-picture {
   /* Image */
   height: 32px;
   transition: opacity 0.2s;
 }
 
-.email-icon-onclick,
-.linkedin-icon-onclick,
-.github-icon-onclick{
+.email-icon-onclick-picture,
+.linkedin-icon-onclick-picture,
+.github-icon-onclick-picture {
   /* Image */
   z-index: -1;
   position: absolute;
@@ -107,8 +108,7 @@
   height: 40px;
 }
 
-
-.orcid-icon-onclick{
+.orcid-icon-onclick-picture {
   /* Image */
   z-index: -1;
   position: absolute;
@@ -118,10 +118,10 @@
   pointer-events: none;
 }
 
-.email-icon:hover,
-.linkedin-icon:hover,
-.github-icon:hover,
-.orcid-icon:hover{
+.email-icon-picture:hover,
+.linkedin-icon-picture:hover,
+.github-icon-picture:hover,
+.orcid-icon-picture:hover {
   /* Image */
   opacity: 0;
 }
@@ -142,37 +142,39 @@
 
 .profile-picture {
   /* Image */
+  position: absolute;
   z-index: -1;
   width: 90%;
   max-width: 280px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
   border-radius: 50%;
 }
 
-.profile-picture-grayscale {
+.profile-grayscale-picture {
   /* Image */
+  position: absolute;
   width: 90%;
   max-width: 280px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
   transition: opacity 0.5s;
 }
 
-.profile-picture-grayscale:hover {
+.profile-grayscale-picture:hover {
   /* Image */
   opacity: 0;
 }
 
 @media (max-width: 850px) {
-  .presentation {
+  .presentation-section {
+    /* Container first */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .photo {
+    /* Container second */
+    margin-top: 0px;
   }
 }
