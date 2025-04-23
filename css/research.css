@@ -44,23 +44,24 @@
   padding-right: 0px;
 }
 
-.experience-figure{
+.experience-figure {
   position: relative;
 }
 
 .harvard-experience-picture,
 .spherical-pendulum-experience-picture,
-.UPS-experience-picture {
+.ups-experience-picture,
+.switch-control-experience-picture {
   /* Picture */
   width: 100%;
   max-width: 200px;
   cursor: pointer;
-  transition: opacity 0.5s;
+  transition: opacity 0.65s;
 }
 
-.harvard-experience-onclick-picture,
-.spherical-pendulum-experience-onclick-picture,
-.UPS-experience-onclick-picture {
+.experience-figure-container .harvard-experience-onclick-picture,
+.experience-figure-container .spherical-pendulum-experience-onclick-picture,
+.experience-figure-container .ups-experience-onclick-picture {
   /* Picture */
   position: absolute;
   width: 100%;
@@ -68,22 +69,43 @@
   max-width: 200px;
   cursor: pointer;
   padding-right: 0px;
-  opacity: 1;
-  transition: opacity 0.5s;
+  opacity: 0;
+  transition: opacity 1.3s ease 0.0s;
+}
+
+
+.experience-figure-container .pod-control-experience-onclick-picture{
+  /* Picture */
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  max-width: 200px;
+  cursor: pointer;
+  padding-right: 0px;
+  opacity: 0;
+  transition: opacity 0.65s ease 0.0s;
 }
 
 .harvard-experience-picture:hover,
 .spherical-pendulum-experience-picture:hover,
-.UPS-experience-picture:hover {
+.ups-experience-picture:hover,
+.switch-control-experience-picture:hover {
   /* Image */
   opacity: 0;
 }
 
 .experience-figure-container:hover .harvard-experience-onclick-picture,
 .experience-figure-container:hover .spherical-pendulum-experience-onclick-picture,
-.experience-figure-container:hover .UPS-experience-onclick-picture{
+.experience-figure-container:hover .ups-experience-onclick-picture {
   /* Image */
   opacity: 1;
+  transition: opacity 0.0s ease 0.0s;
+}
+
+.experience-figure-container:hover .pod-control-experience-onclick-picture{
+  /* Image */
+  opacity: 1;
+  transition: opacity 0.65s ease 0.0s;
 }
 
 .experience-info {
@@ -96,7 +118,8 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.experience-main-info{
+
+.experience-main-info {
   /* Container fifth */
   display: flex;
   flex-direction: column;
@@ -126,11 +149,11 @@
   display: inline-block !important;
 }
 
-.lock-icon-picture{
+.lock-icon-picture {
   height: 16px;
 }
 
-.hinf-icon-picture{
+.hinf-icon-picture {
   height: 16px;
   vertical-align: middle;
 }
@@ -225,7 +248,7 @@
 
 
 @media (max-width: 850px) {
-  
+
   .research-experience {
     /* Container third */
     grid-template-columns: 1fr;
