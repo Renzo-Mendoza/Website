@@ -44,16 +44,13 @@
   padding-right: 0px;
 }
 
-.experience-figure {
-  /* Container fourth */
+.experience-figure{
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .harvard-experience-picture,
-.spherical-pendulum-experience-picture {
+.spherical-pendulum-experience-picture,
+.UPS-experience-picture {
   /* Picture */
   width: 100%;
   max-width: 200px;
@@ -62,7 +59,8 @@
 }
 
 .harvard-experience-onclick-picture,
-.spherical-pendulum-experience-onclick-picture {
+.spherical-pendulum-experience-onclick-picture,
+.UPS-experience-onclick-picture {
   /* Picture */
   position: absolute;
   width: 100%;
@@ -70,12 +68,22 @@
   max-width: 200px;
   cursor: pointer;
   padding-right: 0px;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .harvard-experience-picture:hover,
-.spherical-pendulum-experience-picture:hover {
+.spherical-pendulum-experience-picture:hover,
+.UPS-experience-picture:hover {
   /* Image */
   opacity: 0;
+}
+
+.experience-figure-container:hover .harvard-experience-onclick-picture,
+.experience-figure-container:hover .spherical-pendulum-experience-onclick-picture,
+.experience-figure-container:hover .UPS-experience-onclick-picture{
+  /* Image */
+  opacity: 1;
 }
 
 .experience-info {
@@ -133,7 +141,7 @@
   display: flex;
 }
 
-.url-container {
+.nourl-container {
   display: flex;
   /*margin-right: 8px;*/
   position: relative;
@@ -157,6 +165,37 @@
   justify-content: center;
   align-items: center;
   color: #23388E;
+}
+
+.url-container {
+  display: flex;
+  /*margin-right: 8px;*/
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.url-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.url-paragraph:hover {
+  opacity: 0;
+  text-decoration: none;
+}
+
+.url-onclick-paragraph {
+  position: absolute;
+  display: flex;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  color: #23388E;
+  text-decoration: none;
 }
 
 .link-icon-picture,
