@@ -51,7 +51,9 @@
 .harvard-experience-picture,
 .spherical-pendulum-experience-picture,
 .ups-experience-picture,
-.switch-control-experience-picture {
+.switch-control-experience-picture,
+.rover-experience-picture,
+.monitoring-system-experience-picture {
   /* Picture */
   width: 100%;
   max-width: 200px;
@@ -61,7 +63,9 @@
 
 .experience-figure-container .harvard-experience-onclick-picture,
 .experience-figure-container .spherical-pendulum-experience-onclick-picture,
-.experience-figure-container .ups-experience-onclick-picture {
+.experience-figure-container .ups-experience-onclick-picture,
+.experience-figure-container .rover-experience-onclick-picture,
+.experience-figure-container .monitoring-system-experience-onclick-picture {
   /* Picture */
   position: absolute;
   width: 100%;
@@ -86,17 +90,21 @@
   transition: opacity 0.8s ease 0.0s;
 }
 
-.harvard-experience-picture:hover,
-.spherical-pendulum-experience-picture:hover,
-.ups-experience-picture:hover,
-.switch-control-experience-picture:hover {
+.experience-figure-container:hover .harvard-experience-picture,
+.experience-figure-container:hover .spherical-pendulum-experience-picture,
+.experience-figure-container:hover .ups-experience-picture,
+.experience-figure-container:hover .switch-control-experience-picture,
+.experience-figure-container:hover .rover-experience-picture,
+.experience-figure-container:hover .monitoring-system-experience-picture {
   /* Image */
   opacity: 0;
 }
 
 .experience-figure-container:hover .harvard-experience-onclick-picture,
 .experience-figure-container:hover .spherical-pendulum-experience-onclick-picture,
-.experience-figure-container:hover .ups-experience-onclick-picture {
+.experience-figure-container:hover .ups-experience-onclick-picture,
+.experience-figure-container:hover .rover-experience-onclick-picture,
+.experience-figure-container:hover .monitoring-system-experience-onclick-picture {
   /* Image */
   opacity: 1;
   transition: opacity 0.0s ease 0.0s;
@@ -208,7 +216,6 @@
 
 .url-paragraph:hover {
   opacity: 0;
-  text-decoration: none;
 }
 
 .url-onclick-paragraph {
@@ -238,6 +245,10 @@
   height: 15px;
 }
 
+.contibution-description{
+  margin-top: 10px;
+  padding-left: 20px;
+}
 
 /*.experience-link-nourl {
    Paragraph 
